@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./prism.css" />
+    <title>css-shorthands</title>
+  </head>
+  <body class="flex overflow-x-hidden">
+    <aside class="bg-gray-900 h-screen relative w-72 flex flex-col">
+      <h1 class="text-center text-3xl mt-5 text-white">css-shorthands</h1>
+      <nav class="px-5 mt-14">
+        <ul class="text-white text-lg">
+          <li class="py-2">
+            <img src="./hashtag.svg" alt="hashlink" class="w-5 inline" /><a
+              class="pl-2"
+              href="#background"
+              >background</a
+            >
+          </li>
+          <li class="py-2">
+            <img src="./hashtag.svg" alt="hashlink" class="w-5 inline" /><a
+              class="pl-2"
+              href="#border"
+              >border</a
+            >
+          </li>
+          <li class="py-2">
+            <img src="./hashtag.svg" alt="hashlink" class="w-5 inline" /><a
+              class="pl-2"
+              href="#outline"
+              >outline</a
+            >
+          </li>
+          <li class="py-2">
+            <img src="./hashtag.svg" alt="hashlink" class="w-5 inline" /><a
+              class="pl-2"
+              href="#font"
+              >font</a
+            >
+          </li>
+          <li class="py-2">
+            <img src="./hashtag.svg" alt="hashlink" class="w-5 inline" /><a
+              class="pl-2"
+              href="#margin"
+              >margin</a
+            >
+          </li>
+          <li class="py-2">
+            <img src="./hashtag.svg" alt="hashlink" class="w-5 inline" /><a
+              class="pl-2"
+              href="#padding"
+              >padding</a
+            >
+          </li>
+          <li class="py-2">
+            <img src="./hashtag.svg" alt="hashlink" class="w-5 inline" /><a
+              class="pl-2"
+              href="#list"
+              >list</a
+            >
+          </li>
+          <li class="py-2">
+            <img src="./hashtag.svg" alt="hashlink" class="w-5 inline" /><a
+              class="pl-2"
+              href="#animation"
+              >animation</a
+            >
+          </li>
+          <li class="py-2">
+            <img src="./hashtag.svg" alt="hashlink" class="w-5 inline" /><a
+              class="pl-2"
+              href="#flex"
+              >flex</a
+            >
+          </li>
+          <li class="py-2">
+            <img src="./hashtag.svg" alt="hashlink" class="w-5 inline" /><a
+              class="pl-2"
+              href="#"
+              >more to come</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <p class="w-full text-lg text-white text-center absolute bottom-0 py-3">Made by <a href="https://twitter.com/iamn1khil" class="text-blue-400">@iamn1khil</a></p>
+    </aside>
+
+    <div class="w-full bg-gray-800 h-screen overflow-y-auto py-6 px-12" style="scroll-behavior: smooth">
+      <!-- background -->
+      <div class="w-full py-5" id="background">
+        <div class="flex items-center">
+          <img src="./hashtag.svg" alt="hashlink" class="w-8" />
+          <h1 class="text-white text-3xl">background</h1>
+        </div>
+        <div class="mt-5 ml-2 text-white">
+          <p class="text-lg">longhand</p>
+          <pre><code class="language-css"> 
+  .element {
+     background-color: #000;
+     background-image: url(image.png);
+     background-repeat: no-repeat;
+     background-position: top left;
+     background-attachment: fixed;
+  }
+              </code></pre>
+        </div>
+        <div class="mt-5 ml-2 text-white">
+          <p class="text-lg">shorthand</p>
+          <pre><code class="language-css ">
+  .element {
+      background: #000 url(img.png) no-repeat top left fixed;
+  }
+            </code></pre>
+        </div>
+      </div>
+
+      <!-- border -->
+      <div class="w-full py-5" id="border">
+        <div class="flex items-center">
+          <img src="./hashtag.svg" alt="hashlink" class="w-8" />
+          <h1 class="text-white text-3xl">border</h1>
+        </div>
+        <div class="mt-5 ml-2 text-white">
+          <p class="text-lg">longhand</p>
+          <pre><code class="language-css"> 
+  .element {
+     border-width: 1px;
+     border-style: solid;
+     border-color: black;
+  }
+                </code></pre>
+        </div>
+        <div class="mt-5 ml-2 text-white">
+          <p class="text-lg">shorthand</p>
+          <pre><code class="language-css ">
+  .element {
+      border: 1px solid black;
+  }
+              </code></pre>
+        </div>
+      </div>
+
+      <!-- outline -->
+      <div class="w-full py-5" id="outline">
+        <div class="flex items-center">
+          <img src="./hashtag.svg" alt="hashlink" class="w-8" />
+          <h1 class="text-white text-3xl">outline</h1>
+        </div>
+        <div class="mt-5 ml-2 text-white">
+          <p class="text-lg">longhand</p>
+          <pre><code class="language-css"> 
+  .element {
+     outlie-width: thick;
+     outline-style: dotted;
+     outline-color: red;
+  }
+                </code></pre>
+        </div>
+        <div class="mt-5 ml-2 text-white">
+          <p class="text-lg">shorthand</p>
+          <pre><code class="language-css ">
+  .element {
+      outline: thick dotted red;
+  }
+              </code></pre>
+        </div>
+      </div>
+
+      <!-- font -->
+      <div class="w-full py-5" id="font">
+        <div class="flex items-center">
+          <img src="./hashtag.svg" alt="hashlink" class="w-8" />
+          <h1 class="text-white text-3xl">font</h1>
+        </div>
+        <div class="mt-5 ml-2 text-white">
+          <p class="text-lg">longhand</p>
+          <pre><code class="language-css"> 
+  .element {
+    font-weight: bold;
+    font-style: italic;
+    font-variant: small-caps;
+    font-size: 1em;
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+                </code></pre>
+        </div>
+        <div class="mt-5 ml-2 text-white">
+          <p class="text-lg">shorthand</p>
+          <pre><code class="language-css ">
+  .element {
+      font: bold italic small-caps 1em/1.6 Arial, Helvetica, sans-serif;
+  }
+              </code></pre>
+        </div>
+      </div>
+      
+    <!-- margin -->
+    <div class="w-full py-5" id="margin">
+        <div class="flex items-center">
+          <img src="./hashtag.svg" alt="hashlink" class="w-8" />
+          <h1 class="text-white text-3xl">margin</h1>
+        </div>
+        <div class="mt-5 ml-2 text-white">
+          <p class="text-lg">longhand</p>
+          <pre><code class="language-css"> 
+  .element {
+     margin-top: 1em;
+     margin-right: 1.5em;
+     margin-bottom: 2em;
+     margin-left: 2.5em;
+  }
+
+  /* or */
+
+  .element {
+    margin-top: 1em;
+    margin-right: .5em;
+    margin-bottom: 1em;
+    margin-left: .5em;
+ }
+                </code></pre>
+        </div>
+        <div class="mt-5 ml-2 text-white">
+          <p class="text-lg">shorthand</p>
+          <pre><code class="language-css ">
+  .element {
+      margin: 1em 1.5em 2em 2.5em;
+  }
+
+  /* or */
+
+  .element {
+      margin: 1em .5em;
+  }
+              </code></pre>
+        </div>
+      </div>
+
+      <!-- padding -->
+      <div class="w-full py-5" id="padding">
+        <div class="flex items-center">
+          <img src="./hashtag.svg" alt="hashlink" class="w-8" />
+          <h1 class="text-white text-3xl">padding</h1>
+        </div>
+        <div class="mt-5 ml-2 text-white">
+          <p class="text-lg">longhand</p>
+          <pre><code class="language-css"> 
+  .element {
+     padding-top: 1em;
+     padding-right: 1.5em;
+     padding-bottom: 2em;
+     padding-left: 2.5em;
+  }
+
+  /* or */
+
+  .element {
+    padding-top: 1em;
+    padding-right: .5em;
+    padding-bottom: 1em;
+    padding-left: .5em;
+ }
+                </code></pre>
+        </div>
+        <div class="mt-5 ml-2 text-white">
+          <p class="text-lg">shorthand</p>
+          <pre><code class="language-css ">
+  .element {
+      padding: 1em 1.5em 2em 2.5em;
+  }
+
+  /* or */
+
+  .element {
+      padding: 1em .5em;
+  }
+              </code></pre>
+        </div>
+      </div>
+
+      <!-- list -->
+      <div class="w-full py-5" id="list">
+        <div class="flex items-center">
+          <img src="./hashtag.svg" alt="hashlink" class="w-8" />
+          <h1 class="text-white text-3xl">list</h1>
+        </div>
+        <div class="mt-5 ml-2 text-white">
+          <p class="text-lg">longhand</p>
+          <pre><code class="language-css"> 
+  .element {
+     list-style-type: square;
+     list-style-position: inside;
+     list-style-image: url("image.png");
+  }
+                </code></pre>
+        </div>
+        <div class="mt-5 ml-2 text-white">
+          <p class="text-lg">shorthand</p>
+          <pre><code class="language-css ">
+  .element {
+      list: square inside url("image.png");
+  }
+              </code></pre>
+        </div>
+      </div>
+
+      <!-- animation -->
+      <div class="w-full py-5" id="animation">
+        <div class="flex items-center">
+          <img src="./hashtag.svg" alt="hashlink" class="w-8" />
+          <h1 class="text-white text-3xl">animation</h1>
+        </div>
+        <div class="mt-5 ml-2 text-white">
+          <p class="text-lg">longhand</p>
+          <pre><code class="language-css"> 
+  .element {
+     animation-name: motion;
+     animation-duration: 2s;
+     animation-timing-function: ease-in;
+     animation-delay: 1s;
+     animation-direction: alternate;
+     animation-iteration-count: infinite;
+     animation-fill-mode: none;
+     animation-play-state: running;
+  }
+                </code></pre>
+        </div>
+        <div class="mt-5 ml-2 text-white">
+          <p class="text-lg">shorthand</p>
+          <pre><code class="language-css ">
+  .element {
+      animation: motion 2s ease-in 1s alternate infinite none running;
+  }
+              </code></pre>
+        </div>
+      </div>
+
+      <!-- flex -->
+      <div class="w-full py-5" id="flex">
+        <div class="flex items-center">
+          <img src="./hashtag.svg" alt="hashlink" class="w-8" />
+          <h1 class="text-white text-3xl">flex</h1>
+        </div>
+        <div class="mt-5 ml-2 text-white">
+          <p class="text-lg">longhand</p>
+          <pre><code class="language-css"> 
+  .element {
+     flex-grow: 1;
+     flex-shrink: 1;
+     flex-basis: auto;
+  }
+                </code></pre>
+        </div>
+        <div class="mt-5 ml-2 text-white">
+          <p class="text-lg">shorthand</p>
+          <pre><code class="language-css ">
+  .element {
+      flex: 1 1 auto;
+  }
+              </code></pre>
+        </div>
+      </div>
+
+    </div>
+    <script src="./prism.js"></script>
+  </body>
+</html>
