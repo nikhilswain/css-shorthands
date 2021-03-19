@@ -1,3 +1,9 @@
 aside {
-    height: 6vh;
+  height: 6vh;
+}
+aside button {
+  -webkit-tap-highlight-color: transparent;
+}
+nav ul li a {
+  -webkit-tap-highlight-color: transparent;
 }
