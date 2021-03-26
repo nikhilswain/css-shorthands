@@ -1,0 +1,56 @@
+[
+  {
+    "id": "background",
+    "name": "background",
+    "longhand": "\n  .element {\n\t background-color: #000;\n\t background-image: url(image.png);\n\t background-repeat: no-repeat;\n\t background-position: top left;\n\t background-attachment: fixed;\n  }",
+    "shorthand": "\n  .element {\n\t background: #000 url(img.png)no-repeat top left fixed;\n  }"
+  },
+  {
+    "id": "border",
+    "name": "border",
+    "longhand": "\n  .element {\n\t border-width: 1px;\n\t border-style: solid;\n\t border-color: black;\n  }",
+    "shorthand": "\n  .element {\n\t border: 1px solid black;\n  }"
+  },
+  {
+    "id": "outline",
+    "name": "outline",
+    "longhand": "\n  .element {\n\t outlie-width: thick;\n\t outline-style: dotted;\n\t outline-color: red;\n  }",
+    "shorthand": "\n  .element {\n\t outline: thick dotted red;\n  }"
+  },
+  {
+    "id": "font",
+    "name": "font",
+    "longhand": "\n  .element {\n\t font-weight: bold;\n\t font-style: italic;\n\t font-variant: small-caps;\n\t font-size: 1em;\n\t line-height: 1.6;\n\t font-family: Arial, Helvetica, sans-serif;\n }",
+    "shorthand": "\n  .element {\n\t font: bold italic small-caps 1em/1.6 Arial, Helvetica, sans-serif;\n  }"
+  },
+  {
+    "id": "margin",
+    "name": "margin",
+    "longhand": "\n  .element {\n\t margin-top: 1em;\n\t margin-right: 1.5em;\n\t margin-bottom: 2em;\n\t margin-left: 2.5em; \n  } \n\n /* or */ \n\n  .element {\n\t margin-top: 1em;\n\t margin-right: .5em;\n\t margin-bottom: 1em;\n\t margin-left: .5em; \n  }",
+    "shorthand": "\n  .element {\n\t margin: 1em 1.5em 2em 2.5em;\n  } \n\n /* or */ \n\n  .element {\n\t margin: 1em .5em;\n  }"
+  },
+  {
+    "id": "padding",
+    "name": "padding",
+    "longhand": "\n  .element {\n\t padding-top: 1em;\n\t padding-right: 1.5em;\n\t paddin-bottom: 2em;\n\t padding-left: 2.5em; \n  } \n\n /* or */ \n\n  .element {\n\t padding-top: 1em;\n\t padding-right: .5em;\n\t padding-bottom: 1em;\n\t padding-left: .5em; \n  }",
+    "shorthand": "\n  .element {\n\t padding: 1em 1.5em 2em 2.5em;\n  } \n\n /* or */ \n\n  .element {\n\t padding: 1em .5em; \n  }"
+  },
+  {
+    "id": "list",
+    "name": "list",
+    "longhand": "\n  .element {\n\t list-style-type: square;\n\t list-style-position: inside;\n\t list-style-image: url(\"image.png\");\n  }",
+    "shorthand": "\n  .element {\n\t list: square inside url(\"image.png\");\n  }"
+  },
+  {
+    "id": "animation",
+    "name": "animation",
+    "longhand": "\n  .element {\n\t animation-name: motion;\n\t animation-duration: 2s;\n\t animation-timing-function: ease-in;\n\t animation-delay: 1s;\n\t animation-direction: alternate;\n\t animation-iteration-count: infinite;;\n\t animation-fill-mode: none;\n\t animation-play-state: running;\n  }",
+    "shorthand": "\n  .element {\n\t animation: motion 2s ease-in 1s alternate infinite none running;\n  }"
+  },
+  {
+    "id": "flex",
+    "name": "flex",
+    "longhand": "\n  .element {\n\t flex-grow: 1;\n\t flex-shrink: 1;\n\t flex-basis: auto;\n  }",
+    "shorthand": "\n  .element {\n\t flex: 1 1 auto;\n  }"
+  }
+]
