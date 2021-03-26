@@ -678,4 +678,4 @@ document.onreadystatechange = function () {
 };
 
 const code = document.getElementById("code");
-Prism.highlightAll(code);
+Prism.highlightElement(code);
