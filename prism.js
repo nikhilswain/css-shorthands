@@ -671,10 +671,11 @@ Prism.languages.clike = {
     Prism.languages.markup.tag.addInlined("script", "javascript"),
   (Prism.languages.js = Prism.languages.javascript);
 
-Prism.highlightAll();
-
 document.onreadystatechange = function () {
   if (document.readyState == "complete") {
     Prism.highlightAll();
   }
 };
+
+const code = document.getElementById("code");
+Prism.highlightAll(code);

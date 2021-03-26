@@ -17,7 +17,7 @@ function appendData(data) {
         <div class="mt-5 ml-2 text-white">
           <p class="text-lg">longhand</p>
           <pre id="pre" class="language-css">
-          <code class="language-css">${data[i].longhand}
+          <code id="code" class="language-css">${data[i].longhand}
               </code></pre>
         </div>
         <div class="mt-5 ml-2 text-white">
