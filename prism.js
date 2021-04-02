@@ -672,7 +672,7 @@ Prism.languages.clike = {
   (Prism.languages.js = Prism.languages.javascript);
 
 document.onreadystatechange = function () {
-  
-    Prism.highlightAll();
-  
+  if (document.readyState == "complete") {
+    Prism.highlightAll(async);
+  }
 };
