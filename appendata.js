@@ -1,6 +1,6 @@
 const root = document.getElementById("root");
 
-fetch("/shorthands.json")
+fetch("./shorthands.json")
   .then((res) => res.json())
   .then((data) => appendData(data))
   .catch((err) => console.log(err));
