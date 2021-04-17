@@ -7,3 +7,22 @@ aside button {
 nav ul li a {
   -webkit-tap-highlight-color: transparent;
 }
+
+ul {
+  scrollbar-width: thin;
+  scrollbar-color: #1f2937 transparent;
+}
+
+ul::-webkit-scrollbar {
+  width: 8px;
+}
+
+ul::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+ul::-webkit-scrollbar-thumb {
+  background-color: #1f2937;
+  border-radius: 20px;
+  border: 5px solid transparent;
+}

@@ -111,7 +111,11 @@
         </h1>
       </div>
       <nav class="px-5 mt-14 hidden sm:block" id="nav">
-        <ul class="text-white text-lg" id="listParent">
+        <ul
+          class="text-white text-lg overflow-y-scroll"
+          style="height: 70vh"
+          id="listParent"
+        >
           <li class="py-2">
             <img src="./hashtag.svg" alt="hashlink" class="w-5 inline" /><a
               class="pl-2"
@@ -178,8 +182,22 @@
           <li class="py-2">
             <img src="./hashtag.svg" alt="hashlink" class="w-5 inline" /><a
               class="pl-2"
-              href="#"
-              >more to come</a
+              href="#transition"
+              >transition</a
+            >
+          </li>
+          <li class="py-2">
+            <img src="./hashtag.svg" alt="hashlink" class="w-5 inline" /><a
+              class="pl-2"
+              href="#txtdec"
+              >text-decoration</a
+            >
+          </li>
+          <li class="py-2">
+            <img src="./hashtag.svg" alt="hashlink" class="w-5 inline" /><a
+              class="pl-2"
+              href="#columns"
+              >columns</a
             >
           </li>
         </ul>
@@ -474,6 +492,86 @@
               </code></pre>
         </div>
       </div>
+
+      <!-- transition -->
+      <div class="w-full py-5" id="transition">
+        <div class="flex items-center">
+          <img src="./hashtag.svg" alt="hashlink" class="w-8" />
+          <h1 class="text-white text-3xl">transition</h1>
+        </div>
+        <div class="mt-5 ml-2 text-white">
+          <p class="text-lg">longhand</p>
+          <pre><code class="language-css"> 
+  .element {
+    transition-property: extend;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;  
+  }
+                </code></pre>
+        </div>
+        <div class="mt-5 ml-2 text-white">
+          <p class="text-lg">shorthand</p>
+          <pre><code class="language-css ">
+  .element {
+    transition: extend 2s linear 1s;
+  }
+              </code></pre>
+        </div>
+      </div>
+
+      <!-- text-decoration -->
+      <div class="w-full py-5" id="txtdec">
+        <div class="flex items-center">
+          <img src="./hashtag.svg" alt="hashlink" class="w-8" />
+          <h1 class="text-white text-3xl">text-decoration</h1>
+        </div>
+        <div class="mt-5 ml-2 text-white">
+          <p class="text-lg">longhand</p>
+          <pre><code class="language-css"> 
+  .element {
+    text-decoration-color: blue;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 2px;  
+  }
+                </code></pre>
+        </div>
+        <div class="mt-5 ml-2 text-white">
+          <p class="text-lg">shorthand</p>
+          <pre><code class="language-css ">
+  .element {
+    text-decoration: blue underline solid 2px;
+  }
+              </code></pre>
+        </div>
+      </div>
+
+      <!-- columns -->
+      <div class="w-full py-5" id="columns">
+        <div class="flex items-center">
+          <img src="./hashtag.svg" alt="hashlink" class="w-8" />
+          <h1 class="text-white text-3xl">columns</h1>
+        </div>
+        <div class="mt-5 ml-2 text-white">
+          <p class="text-lg">longhand</p>
+          <pre><code class="language-css"> 
+  .element {
+    column-width: 50px;
+    column-count: 4;  
+  }
+                </code></pre>
+        </div>
+        <div class="mt-5 ml-2 text-white">
+          <p class="text-lg">shorthand</p>
+          <pre><code class="language-css ">
+  .element {
+    columns: 50px 4;
+  }
+              </code></pre>
+        </div>
+      </div>
+
     </div>
     <script src="./menu.js"></script>
     <script src="./prism.js"></script>
