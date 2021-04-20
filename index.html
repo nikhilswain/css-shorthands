@@ -222,6 +222,34 @@
               >columns</a
             >
           </li>
+          <li class="py-2">
+            <img src="./hashtag.svg" alt="hashlink" class="w-5 inline" /><a
+              class="pl-2"
+              href="#grid"
+              >grid</a
+            >
+          </li>
+          <li class="py-2">
+            <img src="./hashtag.svg" alt="hashlink" class="w-5 inline" /><a
+              class="pl-2"
+              href="#gridarea"
+              >grid-area</a
+            >
+          </li>
+          <li class="py-2">
+            <img src="./hashtag.svg" alt="hashlink" class="w-5 inline" /><a
+              class="pl-2"
+              href="#gridcol"
+              >grid-column</a
+            >
+          </li>
+          <li class="py-2">
+            <img src="./hashtag.svg" alt="hashlink" class="w-5 inline" /><a
+              class="pl-2"
+              href="#gridrow"
+              >grid-row</a
+            >
+          </li>
         </ul>
       </nav>
       <p
@@ -240,7 +268,7 @@
       style="scroll-behavior: smooth"
     >
       <!-- background -->
-      <div class="w-full py-5" id="background">
+      <div class="w-full pt-12 pb-5" id="background">
         <div class="flex items-center">
           <img src="./hashtag.svg" alt="hashlink" class="w-8" />
           <h1 class="text-white text-3xl">background</h1>
@@ -268,7 +296,7 @@
       </div>
 
       <!-- border -->
-      <div class="w-full py-5" id="border">
+      <div class="w-full pt-12 pb-5" id="border">
         <div class="flex items-center">
           <img src="./hashtag.svg" alt="hashlink" class="w-8" />
           <h1 class="text-white text-3xl">border</h1>
@@ -294,7 +322,7 @@
       </div>
 
       <!-- outline -->
-      <div class="w-full py-5" id="outline">
+      <div class="w-full pt-12 pb-5" id="outline">
         <div class="flex items-center">
           <img src="./hashtag.svg" alt="hashlink" class="w-8" />
           <h1 class="text-white text-3xl">outline</h1>
@@ -320,7 +348,7 @@
       </div>
 
       <!-- font -->
-      <div class="w-full py-5" id="font">
+      <div class="w-full pt-12 pb-5" id="font">
         <div class="flex items-center">
           <img src="./hashtag.svg" alt="hashlink" class="w-8" />
           <h1 class="text-white text-3xl">font</h1>
@@ -349,7 +377,7 @@
       </div>
 
       <!-- margin -->
-      <div class="w-full py-5" id="margin">
+      <div class="w-full pt-12 pb-5" id="margin">
         <div class="flex items-center">
           <img src="./hashtag.svg" alt="hashlink" class="w-8" />
           <h1 class="text-white text-3xl">margin</h1>
@@ -391,7 +419,7 @@
       </div>
 
       <!-- padding -->
-      <div class="w-full py-5" id="padding">
+      <div class="w-full pt-12 pb-5" id="padding">
         <div class="flex items-center">
           <img src="./hashtag.svg" alt="hashlink" class="w-8" />
           <h1 class="text-white text-3xl">padding</h1>
@@ -433,7 +461,7 @@
       </div>
 
       <!-- list -->
-      <div class="w-full py-5" id="list">
+      <div class="w-full pt-12 pb-5" id="list">
         <div class="flex items-center">
           <img src="./hashtag.svg" alt="hashlink" class="w-8" />
           <h1 class="text-white text-3xl">list</h1>
@@ -459,7 +487,7 @@
       </div>
 
       <!-- animation -->
-      <div class="w-full py-5" id="animation">
+      <div class="w-full pt-12 pb-5" id="animation">
         <div class="flex items-center">
           <img src="./hashtag.svg" alt="hashlink" class="w-8" />
           <h1 class="text-white text-3xl">animation</h1>
@@ -490,7 +518,7 @@
       </div>
 
       <!-- flex -->
-      <div class="w-full py-5" id="flex">
+      <div class="w-full pt-12 pb-5" id="flex">
         <div class="flex items-center">
           <img src="./hashtag.svg" alt="hashlink" class="w-8" />
           <h1 class="text-white text-3xl">flex</h1>
@@ -516,7 +544,7 @@
       </div>
 
       <!-- transition -->
-      <div class="w-full py-5" id="transition">
+      <div class="w-full pt-12 pb-5" id="transition">
         <div class="flex items-center">
           <img src="./hashtag.svg" alt="hashlink" class="w-8" />
           <h1 class="text-white text-3xl">transition</h1>
@@ -543,7 +571,7 @@
       </div>
 
       <!-- text-decoration -->
-      <div class="w-full py-5" id="txtdec">
+      <div class="w-full pt-12 pb-5" id="txtdec">
         <div class="flex items-center">
           <img src="./hashtag.svg" alt="hashlink" class="w-8" />
           <h1 class="text-white text-3xl">text-decoration</h1>
@@ -570,7 +598,7 @@
       </div>
 
       <!-- columns -->
-      <div class="w-full py-5" id="columns">
+      <div class="w-full pt-12 pb-5" id="columns">
         <div class="flex items-center">
           <img src="./hashtag.svg" alt="hashlink" class="w-8" />
           <h1 class="text-white text-3xl">columns</h1>
@@ -593,6 +621,113 @@
               </code></pre>
         </div>
       </div>
+
+      <!-- grid -->
+      <div class="w-full pt-12 pb-5" id="grid">
+        <div class="flex items-center">
+          <img src="./hashtag.svg" alt="hashlink" class="w-8" />
+          <h1 class="text-white text-3xl">grid</h1>
+        </div>
+        <div class="mt-5 ml-2 text-white">
+          <p class="text-lg">longhand</p>
+          <pre><code class="language-css"> 
+  .element {
+    grid-template-rows: 100px auto 300px;
+    grid-template-columns: repeat(2, 1fr) 100px;  
+  }
+                </code></pre>
+        </div>
+        <div class="mt-5 ml-2 text-white">
+          <p class="text-lg">shorthand</p>
+          <pre><code class="language-css ">
+  .element {
+    grid: 100px auto 300px / repeat(2, 1fr) 100px;
+  }
+              </code></pre>
+        </div>
+      </div>
+
+      <!-- grid-area -->
+      <div class="w-full pt-12 pb-5" id="gridarea">
+        <div class="flex items-center">
+          <img src="./hashtag.svg" alt="hashlink" class="w-8" />
+          <h1 class="text-white text-3xl">grid-area</h1>
+        </div>
+        <div class="mt-5 ml-2 text-white">
+          <p class="text-lg">longhand</p>
+          <pre><code class="language-css"> 
+  .element {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 4;
+    grid-column-end: 4;  
+  }
+                </code></pre>
+        </div>
+        <div class="mt-5 ml-2 text-white">
+          <p class="text-lg">shorthand</p>
+          <pre><code class="language-css ">
+  .element {
+    grid-area: 2 / 1 / span 2 / span 3;
+  }
+              </code></pre>
+        </div>
+      </div>
+
+      <!-- grid-column -->
+      <div class="w-full pt-12 pb-5" id="gridcol">
+        <div class="flex items-center">
+          <img src="./hashtag.svg" alt="hashlink" class="w-8" />
+          <h1 class="text-white text-3xl">grid-column</h1>
+        </div>
+        <div class="mt-5 ml-2 text-white">
+          <p class="text-lg">longhand</p>
+          <pre><code class="language-css"> 
+  .element {
+    grid-column-start: 1;
+    grid-column-end: 3; /* or */ grid-column-end: span 2;  
+  }
+                </code></pre>
+        </div>
+        <div class="mt-5 ml-2 text-white">
+          <p class="text-lg">shorthand</p>
+          <pre><code class="language-css ">
+  .element {
+    grid-column: 1 / 3 ;
+    /* or */
+    grid-column: 1 / span 2; 
+  }
+              </code></pre>
+        </div>
+      </div>
+
+      <!-- grid-row -->
+      <div class="w-full pt-12 pb-5" id="gridrow">
+        <div class="flex items-center">
+          <img src="./hashtag.svg" alt="hashlink" class="w-8" />
+          <h1 class="text-white text-3xl">grid-row</h1>
+        </div>
+        <div class="mt-5 ml-2 text-white">
+          <p class="text-lg">longhand</p>
+          <pre><code class="language-css"> 
+  .element {
+    grid-row-start: 1;
+    grid-row-end: 3; /* or */ grid-row-end: span 2; 
+  }
+                </code></pre>
+        </div>
+        <div class="mt-5 ml-2 text-white">
+          <p class="text-lg">shorthand</p>
+          <pre><code class="language-css ">
+  .element {
+    grid-row: 1 / 3 ;
+    /* or */
+    grid-row: 1 / span 2;
+  }
+              </code></pre>
+        </div>
+      </div>
+
     </div>
     <script src="./menu.js"></script>
     <script src="./prism.js"></script>
